@@ -1,4 +1,4 @@
-import { Category } from "../types";
+import { Category } from "@/shared/types";
 
 export const categories: Category[] = [
   { id: "cpu", name: "Procesadores", slug: "procesadores", icon: "Cpu", count: 8 },
