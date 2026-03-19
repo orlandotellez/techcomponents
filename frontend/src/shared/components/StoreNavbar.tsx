@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { ShoppingCart, Search, Menu, X } from 'lucide-react';
-import { useCart } from '@/features/cart/context/CardContext';
+import { useCart } from '@/features/cart/context/CartContext';
 import { useState } from 'react';
 import { categories } from '../data/categories';
 import styles from './StoreNavbar.module.css';
@@ -20,9 +20,9 @@ export const StoreNavbar = () => {
         <div className={`${styles.container} ${styles.mainContent}`}>
 
           {/* Logo */}
-          <h1>
+          <h1 className={styles.title}>
             <Link href="/" className={styles.logo}>
-              TECH<span>FORGE</span>
+              TECH<span>COMPONENTS</span>
             </Link>
 
           </h1>
