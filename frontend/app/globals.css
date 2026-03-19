@@ -6,6 +6,7 @@
 
 body {
   font-family: var(--font-geist-sans);
+  background: #f8fafc;
 }
 
 h1 {
@@ -16,4 +17,8 @@ h1 {
 a {
   text-decoration: none;
   color: black;
+}
+
+li {
+  list-style: none;
 }
