@@ -1,5 +1,6 @@
 import { StoreNavbar } from '@/shared/components/StoreNavbar';
 import styles from "./layout.module.css"
+import Footer from '@/shared/components/Footer';
 
 export default function ShopLayout({
   children,
@@ -10,6 +11,7 @@ export default function ShopLayout({
     <div className={styles.container}>
       <StoreNavbar />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 }
