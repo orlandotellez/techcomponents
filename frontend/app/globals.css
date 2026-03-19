@@ -22,3 +22,8 @@ a {
 li {
   list-style: none;
 }
+
+select {
+  background: white;
+  border: 1px solid #e5e7eb;
+}
