@@ -1,0 +1,184 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 24px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right {
+  position: relative;
+}
+
+.card {
+  border: 1px solid hsl(214 32% 91%);
+  padding: 20px;
+  background: white;
+}
+
+.cardTitle {
+  font-weight: bold;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.full {
+  grid-column: span 2;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid;
+  font-size: 14px;
+  background: #f8fafc;
+  border: 1px solid hsl(214 32% 91%);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.paymentNote {
+  font-size: 12px;
+  margin-bottom: 10px;
+  background: var(--muted);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.summary {
+  border: 1px solid hsl(214 32% 91%);
+  padding: 20px;
+  position: sticky;
+  top: 100px;
+  background: white;
+}
+
+.summaryTitle {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.summaryItems {
+  margin-bottom: 12px;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.productName {
+  color: var(--muted-foreground);
+}
+
+/* TOTALS */
+.totals {
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+/* BUTTON */
+.primaryButton {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px;
+  background: #4e8ef7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  opacity: 0.9;
+}
+
+.primaryButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* SUCCESS */
+.successContainer {
+  text-align: center;
+  max-width: 500px;
+  margin: 60px auto;
+}
+
+.successIcon {
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.successTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.successText {
+  color: var(--muted-foreground);
+  margin-bottom: 6px;
+}
+
+.orderId {
+  margin-bottom: 16px;
+}
+
+.note {
+  font-size: 12px;
+  background: var(--muted);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
