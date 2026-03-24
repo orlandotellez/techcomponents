@@ -1,7 +1,7 @@
 use axum::Router;
 
-mod v1;
+use crate::features;
 
 pub fn create_routes() -> Router {
-    Router::new().merge(v1::v1_routes())
+    Router::new().nest("/api/v1/auth", features::auth::routes::routes())
 }
