@@ -1,5 +1,6 @@
 mod features;
 mod routes;
+mod shared;
 
 use axum::Router;
 use tokio::net::TcpListener;
