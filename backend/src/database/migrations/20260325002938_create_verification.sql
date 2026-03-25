@@ -1,5 +1,7 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
 CREATE TABLE verification (
-  id UUID DEFAULT uuid_generate_v4(), 
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(), 
   identifier TEXT NOT NULL, 
   value TEXT NOT NULL, 
   expires_at TIMESTAMPTZ NOT NULL, 

@@ -1,8 +1,10 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
 CREATE TABLE account (
-  id UUID DEFAULT uuid_generate_v4(), 
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(), 
   account_id TEXT NOT NULL, 
   provider_id TEXT NOT NULL, 
-  user_id text NOT NULL REFERENCES user (id) ON DELETE CASCADE, 
+  user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE, 
   access_token TEXT, 
   refresh_token TEXT, 
   id_token TEXT, 
