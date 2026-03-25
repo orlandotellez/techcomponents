@@ -1,7 +1,7 @@
 use axum::Router;
 
-use crate::features;
+use crate::{features, shared::state::DbState};
 
-pub fn create_routes() -> Router {
+pub fn create_routes() -> Router<DbState> {
     Router::new().nest("/api/v1/auth", features::auth::routes::routes())
 }
