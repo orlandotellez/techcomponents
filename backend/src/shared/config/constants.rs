@@ -4,3 +4,6 @@ use once_cell::sync::Lazy;
 
 pub static DATABASE_URL: Lazy<String> =
     Lazy::new(|| env::var("DATABASE_URL").expect("DATABASE_URL not be defined"));
+
+pub static JWT_SECRET: Lazy<String> =
+    Lazy::new(|| env::var("JWT_SECRET").expect("JWT_SECRET not be defined"));
